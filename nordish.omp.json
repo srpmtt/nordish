@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#5E81AC",
+          "properties": {
+            "macos": "\ue711"
+          },
+          "style": "plain",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}}",
+          "type": "os"
+        },
+        {
+          "foreground": "#5E81AC",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": " {{ .Path }}",
+          "type": "path"
+        },
+        {
+          "type": "angular",
+          "style": "powerline",
+          "foreground": "#BF616A",
+          "template": " \ue753 {{.Full}}"
+        },
+        {
+          "type": "docker",
+          "style": "powerline",
+          "foreground": "#88C0D0",
+          "template": " \ue7b0 {{ .Context }}"
+        },
+        {
+          "type": "dotnet",
+          "style": "powerline",
+          "foreground": "#B48EAD",
+          "template": " \ue77f {{ .Full }}"
+        },
+        {
+          "type": "go",
+          "foreground": "#88C0D0",
+          "style": "powerline",
+          "template": " \ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
+        },
+        {
+          "type": "java",
+          "foreground": "#D08770",
+          "style": "powerline",
+          "template": " \ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
+        },
+        {
+          "type": "lua",
+          "style": "powerline",
+          "foreground": "#B48EAD",
+          "template": " \ue620 {{ .Full }}"
+        },
+        {
+          "type": "node",
+          "foreground": "#A3BE8C",
+          "style": "powerline",
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}"
+        },
+        {
+          "type": "python",
+          "foreground": "#EBCB8B",
+          "style": "powerline",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}"
+        },
+        {
+          "type": "ruby",
+          "foreground": "#BF616A",
+          "style": "powerline",
+          "template": " \ue791 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
+        },
+        {
+          "type": "rust",
+          "style": "powerline",
+          "foreground": "#BF616A",
+          "template": " \ue7a8 {{ .Full }}"
+        },
+        {
+          "foreground": "#A3BE8C",
+          "properties": {
+            "branch_icon": "\ueafc",
+            "fetch_stash_count": true
+          },
+          "style": "plain",
+          "template": "<#ffffff> on</> {{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#5E81AC",
+          "style": "powerline",
+          "template": " \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "type": "julia"
+        },
+        {
+          "foreground": "#5E81AC",
+          "style": "plain",
+          "template": "\u2514\u2500 ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
