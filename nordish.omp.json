@@ -47,6 +47,12 @@
           "template": " \ufcd1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
         },
         {
+          "type": "haskell",
+          "style": "powerline",
+          "foreground": "#B48EAD",
+          "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}"
+        },
+        {
           "type": "java",
           "foreground": "#D08770",
           "style": "powerline",
