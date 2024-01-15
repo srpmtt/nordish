@@ -71,6 +71,12 @@
           "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}"
         },
         {
+          "type": "ocaml",
+          "style": "powerline",
+          "foreground": "#D08770",
+          "template": " \ue67a {{ .Full }}"
+        },
+        {
           "type": "python",
           "foreground": "#EBCB8B",
           "style": "powerline",
