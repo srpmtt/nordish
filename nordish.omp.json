@@ -29,12 +29,6 @@
           "template": " \ue753 {{.Full}}"
         },
         {
-          "type": "docker",
-          "style": "powerline",
-          "foreground": "#88C0D0",
-          "template": " \ue7b0 {{ .Context }}"
-        },
-        {
           "type": "dotnet",
           "style": "powerline",
           "foreground": "#B48EAD",
