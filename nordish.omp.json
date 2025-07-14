@@ -35,6 +35,12 @@
           "template": " \ue77f {{ .Full }}"
         },
         {
+          "type": "elixir",
+          "style": "powerline",
+          "foreground": "#B48EAD",
+          "template": " \ue62d {{ .Full }} "
+        },
+        {
           "type": "go",
           "foreground": "#88C0D0",
           "style": "powerline",
