@@ -16,6 +16,17 @@
           }
         },
         {
+          "type": "shell",
+          "style": "plain",
+          "foreground": "#5E81AC",
+          "options": {
+            "mapped_shell_names": {
+              "bash": "",
+              "pwsh": "[pwsh]"
+            }
+          }
+        },
+        {
           "type": "path",
           "template": " [{{ .Path }}]",
           "foreground": "#5E81AC",
