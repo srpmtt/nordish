@@ -119,6 +119,25 @@
           }
         },
         {
+          "type": "language",
+          "template": "{{ if .Error }}{{ else }} ODIN{{ end }}",
+          "foreground": "#1e5085",
+          "style": "plain",
+          "options": {
+            "name": "odin",
+            "extensions": ["*.odin"],
+            "project_files": ["ols.json"],
+            "tools": [
+              {
+                "name": "odin",
+                "executable": "odin",
+                "args": ["version"],
+                "regex": "odin version (?P<version>dev-(?P<major>\\d+)-(?P<minor>\\d+)(?::[\\w_]+)?)"
+              }
+            ]
+          }
+        },
+        {
           "type": "python",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
           "foreground": "#EBCB8B",
